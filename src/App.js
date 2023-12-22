@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from './components/nav/Nav'
-import Header from './components/Header/header'
+import Header from './components/header/Header'
+import Socials from './components/socials/Socials'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Experience from './components/experience/Experience'
@@ -14,6 +15,7 @@ const App = () => {
     <>
       <Nav />
       <Header />
+      <Socials />
       <About />
       <Projects />
       <Experience />
