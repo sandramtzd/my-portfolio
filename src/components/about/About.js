@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import MeAbout from '../../assets/me-about.jpeg'
+
 import { FaGraduationCap } from "react-icons/fa";
 import { LuWebhook } from "react-icons/lu";
 import { FiTool } from "react-icons/fi";
@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src={MeAbout} alt=''/> 
+            
           </div>
         </div>
 
