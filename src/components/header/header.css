@@ -1,13 +1,15 @@
 header {
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+
 }
 
 .header__container {
+    display: grid;
+    grid-template-columns: 75% 25%;
     text-align: center;
-    height: 100%;
-    position: relative;
+
+   
 }
 
 .header__buttons {
@@ -18,15 +20,12 @@ header {
 }
 
 .header__image {
-    width: 22rem;
-    margin-top: 4rem;
-    position: absolute;
-    left: calc(50% - 11rem);
+
     
 }
 
 .header__image img{
-    border-radius: 12rem 12rem 0 0; 
+
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============ */

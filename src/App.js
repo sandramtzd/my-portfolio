@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './components/nav/Nav'
+import Navbar from './components/nav/Navbar'
 import Header from './components/header/Header'
 import Socials from './components/socials/Socials'
 import About from './components/about/About'
@@ -13,7 +13,7 @@ import Footer from './components/footer/Footer'
 const App = () => {
   return (
     <>
-      <Nav />
+      <Navbar />
       <Header />
       <Socials />
       <About />
