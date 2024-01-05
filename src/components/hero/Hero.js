@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Hero, HeroContainer, TextLoop, Greeting, Span, Name, Description, ButtonContact } from './HeroStyle'
 import Typewriter from 'typewriter-effect';
-import { bio } from '../../data/constants';
+import { bio } from '../../utils/data/constants';
 
 const Header = () => {
+
+  
+
   return (
     <Hero>
       <HeroContainer>

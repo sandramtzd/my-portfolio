@@ -9,7 +9,10 @@ export const bio = {
         "Frontend Developer"
     ],
     description: 
-        "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+        " Welcome to my portfolio! I'm a Master's graduate in information Technology, specialising in Business Intelligence. My collaborative approach shines in diverse teams, exemplified by winning £3,000 at Hack For Change by Bright Network, where we developed a mental-health application powered by AI. With a foundation in full-stack software engineering and data analytics, I bridge business challenges to technological solutions.",
+    
+    about: 
+        "My journey into tech has been unconventional. Originally a chemical engineer, I witnessed firsthand the industry's struggle with data mismanagement and time-consuming administrative tasks. Fueled by the desire to bridge this gap, I seized the opportunity to transition into tech. Awarded the British Council Scholarship for Women in STEM, I embarked on a transformative Master's journey, complemented by an intensive 3-month full-stack development bootcamp. Now, armed with a Master's in Information Technology and a specialization in Business Intelligence, I'm on a mission to revolutionize industries by crafting data-driven strategies and innovative software solutions. Let's turn challenges into opportunities together! "
 };
 
 export const experiences = [

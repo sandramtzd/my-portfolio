@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { ExperienceContainer, Heading, Tabs, TabsList, TabButton, TabHighlighted, TabContent, Job, JobTitle, CompanyName, JobDetails } from './ExperienceStyle'
-import { experiences } from '../../data/constants';
-import sr from './Scroll';
-import { srConfig } from './ScrollConfig';
+import { experiences } from '../../utils/data/constants';
+import sr from '../../utils/Scroll';
+import { srConfig } from '../../utils/ScrollConfig';
 
 const Experience = () => {
   const [activeTabId, setActiveTabId] = useState(0);
