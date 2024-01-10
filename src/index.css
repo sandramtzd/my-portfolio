@@ -11,16 +11,18 @@
 }
 
 :root {
-    --color-bg: #1b1d21;
-    --color-bg-variant: #8A714A;
-    --color-primary: #fbbe97;
-    --color-light: #fbe6d8;
+    --color-bg: #1b1d21; /*eerie black*/
+    --color-bg-variant: #D08C69; /*persian orange*/
+    --color-primary-darker: #EA967A; /*atomic tangerine*/
+    --color-primary: #fbbe98; /*peach fuzz*/
+    --color-primary-variant: #ffc2c0; /*tea rose(red)*/
+    --color-secondary: #BBB4CA; /*thistle*/
+    --color-secondary-variant: #BFA2AB; /*rose quartz*/
+    --color-light: #fbe6d8; /*champagne pink*/
+    --color-light-variant: #FADAD6; /*misty rose*/
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-ms: 90%;
 }
 
 html {
