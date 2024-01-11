@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/favicon.ico'
+import Logo from '../../assets/Logo.png'
 import CV from '../../assets/Sandra_CV.pdf'
 import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu } from './NavStyle'
 import { FaBars } from "react-icons/fa6";
