@@ -18,7 +18,7 @@ const Button = styled.button`
 const Card = styled.div`
     width: 330px;
     height: 490px;
-    background-color: var(--color-light);
+    background-color: var(--color-bg-light);
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
@@ -41,7 +41,7 @@ const Card = styled.div`
 const Image = styled.img`
     width: 100%;
     height: 180px;
-    background-color: transparent;
+
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
 `
@@ -59,7 +59,7 @@ const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
     color: var(--color-primary);
-    background-color: var(--color-secondary);
+    background-color: var(--color-bg);
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -141,7 +141,7 @@ const ProjectCard = ({project,setOpenModal}) => {
                     <Avatar src={member.img}/>
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
+            
         </Card>
     )
 }

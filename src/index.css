@@ -12,6 +12,7 @@
 
 :root {
     --color-bg: #1b1d21; /*eerie black*/
+    --color-bg-light: #302E31;
     --color-bg-variant: #D08C69; /*persian orange*/
     --color-primary-darker: #EA967A; /*atomic tangerine*/
     --color-primary: #fbbe98; /*peach fuzz*/
@@ -20,6 +21,7 @@
     --color-secondary-variant: #BFA2AB; /*rose quartz*/
     --color-light: #fbe6d8; /*champagne pink*/
     --color-light-variant: #FADAD6; /*misty rose*/
+    --color-grey: #8D8384;
 
     --transition: all 400ms ease;
 
