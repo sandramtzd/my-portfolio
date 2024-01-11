@@ -203,7 +203,7 @@ export const projects = [
       description:
         "Developed a full-stack web application for a functional warehouse management system for the fictional company Rainforest Retail",
       image:
-        "./src/assets/Projects/WMS.png",
+        "https://github.com/sandramtzd/my_portfolio/blob/main/src/assets/Projects/WMS.png",
       tags: ["React Js", "Java"],
       category: "web app",
       github: "https://github.com/RNWalker/capstone_backend_project",
@@ -238,7 +238,7 @@ export const projects = [
       description:
         "Developed the front end for a virtual pet",
       image:
-        "",
+        "https://github.com/sandramtzd/my_portfolio/blob/main/src/assets/Projects/Jonagotchi.png",
       tags: [
         "React Js", "Java",
 
