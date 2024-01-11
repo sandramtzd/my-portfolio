@@ -1,30 +1,42 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.section`
-    margin: 0 auto;
-    padding: 150px 0;
-    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
+    padding: 150px 200px;
+    z-index: 1;
+
+    @media (max-width: 960px) {
+        padding: 66px 16px;
+    }
+    @media (max-width: 640) {
+        padding: 32px 16px;
+    }   
+
 
 
 `;
 
-export const Heading = styled.h3`
+export const Heading = styled.h1`
     position: relative;
     display: flex;
     align-items: center;
     margin: 10px 0 40px;
     width: 100%;
     white-space: nowrap;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 3.5rem;
+    color: var(--color-light);
+    
     line-height: 1.3;
 
     &:after {
         content: "";
-        width: 70%;
+        width: 100%;
         height: 1.5px;
-        background: var(--color-primary);
+        background: var(--color-light);
         margin-left: 50px;
         
 
@@ -36,19 +48,63 @@ export const FlexContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: flex-start;
+    
+    
     
 
 `;
 
 export const AboutContent = styled.div`
     width: 60%;
-    max-width: 480px;
+    font-size: 20px;
+    justify-content: space-evenly;
 
    
    
 
 `;
+
+export const SkillsContainer = styled.ul`
+    display: grid;
+    grid-template-columns:repeat(5, 150px);
+    overflow: hidden;
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style: none;
+
+`;
+
+export const Skill= styled.div`
+    position:relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: 'Karla' sans-serif;
+    color: var(--color-secondary);
+
+`;
+
+export const SkillTitle= styled.div`
+    position:relative;
+    color: var(--color-primary)
+`;
+
+export const SkillList= styled.div`
+    position:relative;
+`;
+
+export const SkillItem= styled.div`
+    position:relative;
+`;
+
+export const SkillImage= styled.div`
+    position:relative;
+`;
+
+export const LeftContainer = styled.div`
+    position:relative;
+`;
+
+
 
 export const Picture = styled.div`
     position: relative;

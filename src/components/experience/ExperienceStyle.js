@@ -2,30 +2,40 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const ExperienceContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 150px 0;
+    padding: 150px 200px;
+    
+    @media (max-width: 960px) {
+        padding: 66px 16px;
+    }
+    @media (max-width: 640) {
+        padding: 32px 16px;
+    }
+    z-index: 1;
 
 
 `;
 
-export const Heading = styled.h3`
+export const Heading = styled.h1`
     position: relative;
     display: flex;
     align-items: center;
     margin: 10px 0 40px;
     width: 100%;
     white-space: nowrap;
-    font-size: xxx-large;
-    font-weight: 300;
+    font-size: 3.5rem;
+    color: var(--color-light);
     line-height: 1.3;
 
     &:after {
         content: "";
-        width: 70%;
+        width: 100%;
         height: 1.5px;
-        background: var(--color-primary);
+        background: var(--color-light);
         margin-left: 50px;
 
 `;

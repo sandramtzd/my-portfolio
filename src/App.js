@@ -21,7 +21,9 @@ const App = () => {
       <Projects />
       <Experience />
       <Contact />
+      
       <Footer />
+      
     </Router>
   )
 }

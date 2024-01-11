@@ -1,4 +1,6 @@
-.socials {
+import styled from "styled-components";
+
+export const SocialsContainer = styled.div`
     width: 150px;
     position: fixed;
     bottom: 0px;
@@ -12,12 +14,21 @@
     font-size: 3rem;
     padding: 10px;
 
-}
+    &:after {
+        content: "";
+        width: 1.5px;
+        height: 6rem;
+        background: var(--color-primary);
 
-.socials::after {
-    content: "";
-    width: 1.5px;
-    height: 6rem;
-    background: var(--color-primary);
+    }
 
-}
+
+
+ 
+`;
+
+
+
+
+
+

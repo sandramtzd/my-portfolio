@@ -38,6 +38,7 @@ export const Name = styled.h1`
   display: flex;
   line-height: 1.1;
   margin: 0px;
+  color: var(--color-light)
   
 `;
 
@@ -48,7 +49,7 @@ export const TextLoop = styled.div`
   font-size: 40px;
   display: flex;
   gap: 12px;
-  line-height: 68px;
+  line-height: 100px;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -61,7 +62,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.div`
-    color: var(--color-primary);
+    color: var(--color-secondary;
     display: flex;
   
 `;
@@ -80,8 +81,11 @@ export const Description = styled.div`
 
 
 
-export const ButtonContact = styled.div`
-
+export const ButtonContact = styled.button`
   display: flex;
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  border-radius: 30px;
+
   
 `;

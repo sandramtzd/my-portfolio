@@ -8,12 +8,153 @@ export const bio = {
         "Backend Developer",
         "Frontend Developer"
     ],
-    description: 
-        " Welcome to my portfolio! I'm a Master's graduate in information Technology, specialising in Business Intelligence. My collaborative approach shines in diverse teams, exemplified by winning £3,000 at Hack For Change by Bright Network, where we developed a mental-health application powered by AI. With a foundation in full-stack software engineering and data analytics, I bridge business challenges to technological solutions.",
+    description: [
+        " Welcome to my portfolio! I'm a Master's graduate in Information Technology, specialising in Business Intelligence.",
+        " My collaborative approach shines in diverse teams, exemplified by winning £3,000 at Hack For Change by Bright Network, where we developed a mental-health application powered by AI.",
+        " With a foundation in full-stack software engineering and data analytics, I bridge business challenges to technological solutions.",
+      ],
     
-    about: 
-        "My journey into tech has been unconventional. Originally a chemical engineer, I witnessed firsthand the industry's struggle with data mismanagement and time-consuming administrative tasks. Fueled by the desire to bridge this gap, I seized the opportunity to transition into tech. Awarded the British Council Scholarship for Women in STEM, I embarked on a transformative Master's journey, complemented by an intensive 3-month full-stack development bootcamp. Now, armed with a Master's in Information Technology and a specialization in Business Intelligence, I'm on a mission to revolutionize industries by crafting data-driven strategies and innovative software solutions. Let's turn challenges into opportunities together! "
+    about: [
+        "My journey into tech has been unconventional - originally chemical engineer, I witnessed firsthand the industry's struggle with data mismanagement and time-consuming administrative tasks.",
+        "Fueled by the desire to bridge this gap, I seized the opportunity to transition into tech. Awarded the British Council Scholarship for Women in STEM, I embarked on a transformative Master's journey, complemented by an intensive 3-month full-stack development bootcamp.",
+        "Here is a list of the technologies that I'm familiar with!",
+    ],
 };
+
+export const skills = [
+  {
+    title: "Frontend",
+    skills: [
+      {
+        name: "React Js",
+        image:
+          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+      },
+
+      {
+        name: "HTML",
+        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+      },
+      {
+        name: "CSS",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+      },
+      {
+        name: "JavaScript",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+      },
+
+      {
+        name: "Material UI",
+        image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"
+         },
+
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      {
+        name: "Java",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      },
+
+      {
+        name: "Node Js",
+        image: "https://nodejs.org/static/images/logo.svg",
+      },
+
+      {
+        name: "MySQL",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+      },
+      {
+        name: "Postgresql",
+        image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+      },
+    ],
+  },
+  {
+    title: "Mobile",
+    skills: [
+      {
+        name: "Android Studio",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+
+      {
+        name: "React Native",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+    ],
+  },
+  {
+    title: "Data Analysis",
+    skills: [
+      {
+        name: "R Studio",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+
+      {
+        name: "Tableau",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+      {
+        name: "PowerBI",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+
+      {
+        name: "Excell",
+        image:
+          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+      },
+    ],
+  },
+  {
+    title: "Others",
+    skills: [
+      {
+        name: "Git",
+        image:
+          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+      },
+      {
+        name: "GitHub",
+        image:
+          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      },
+     
+      {
+        name: "VS Code",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+      },
+      {
+        name: "Postman",
+        image:
+          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+      },
+
+      {
+        name: "Figma",
+        image:
+          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+      },
+    ],
+  },
+];
 
 export const experiences = [
     {
