@@ -15,7 +15,7 @@
 
 
 <div align="center">
-  <img alt="Demo" src="https://github.com/chandrikadeb7/chandrikadeb7.github.io/blob/code/src/images/demo.png" />
+  <img alt="Demo" src="https://github.com/sandramtzd/my_portfolio/blob/main/src/assets/Demo.png" />
 </div>
 
 
