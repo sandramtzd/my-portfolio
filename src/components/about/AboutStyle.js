@@ -55,7 +55,7 @@ export const FlexContainer = styled.div`
 `;
 
 export const AboutContent = styled.div`
-    width: 60%;
+    width: 100%;
     font-size: 20px;
     justify-content: space-evenly;
 
@@ -66,7 +66,7 @@ export const AboutContent = styled.div`
 
 export const SkillsContainer = styled.ul`
     display: grid;
-    grid-template-columns:repeat(5, 150px);
+    grid-template-columns:repeat(5, 170px);
     overflow: hidden;
     padding: 0;
     margin: 20px 0 0 0;

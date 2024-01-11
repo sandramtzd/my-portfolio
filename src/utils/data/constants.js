@@ -159,53 +159,38 @@ export const skills = [
 export const experiences = [
     {
         id: 0,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-        role: "Frontend Engineer Intern",
-        company: "Neurobit",
-        date: "June 2023 - Present",
-        desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
+        img: "",
+        role: "Trading Assistant",
+        company: "Sainsbury's",
+        date: "November 2022 - Present",
+        desc: "",
         skills: [
-        "ReactJS",
-        "Redux",
-        "NodeJs",
-        "Material UI",
-        "HTML",
-        "CSS",
-        "JavaScript",
+        "",
         ],
 
     },
 
     {
         id: 1,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-        role: "Fullstack Externship",
-        company: "Flipr",
+        img: "",
+        role: "Quality Engineer",
+        company: "Kone",
         date: "June 2023 - July 2023",
-        desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
+        desc: "",
         skills: [
-        "ReactJS",
-        "Redux",
-        "NodeJs",
-        "Material UI",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Docker",
-        "AWS",
-        "MongoDB",
+        "",
         ],
 
     },
 
     {
         id: 2,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-        role: "Open Source Contributor ",
-        company: "GirlScript Summer of Code",
-        date: "May 2023 - Present",
-        desc: "Contributing to different open-source projects and learn from industry experts",
-        doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
+        img: "",
+        role: "",
+        company: "",
+        date: "",
+        desc: "",
+        doc: "",
       },
 
 ];
@@ -213,102 +198,138 @@ export const experiences = [
 export const projects = [
     {
       id: 0,
-      title: "Podstream",
-      date: "Apr 2023 - May 2023",
+      title: "Warehouse Management System",
+      date: "Sep 2023",
       description:
-        "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+        "Developed a full-stack web application for a functional warehouse management system for the fictional company Rainforest Retail",
       image:
-        "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+        "./src/assets/Projects/WMS.png",
+      tags: ["React Js", "Java"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
-      external: "https://podstream.netlify.app/",
+      github: "https://github.com/RNWalker/capstone_backend_project",
+      external: "https://github.com/sarahoco014/Capstone_Frontend",
       member: [
         {
-          name: "Rishav Chanda",
-          img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-          linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-          github: "https://github.com/rishavchanda/",
+          name: "Sandra Martinez",
+          img: "https://avatars.githubusercontent.com/u/98602406?s…00&u=d0235b1c52cc289c7da69b817c4e702dfd1b2715&v=4",
+          github: "https://github.com/sandramtzd",
         },
         {
-          name: "Upasana Chaudhuri",
-          img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-          linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-          github: "https://github.com/upasana0710",
+          name: "Rebecca Walker",
+          img: "https://avatars.githubusercontent.com/u/78052216?v=4",
+          github: "https://github.com/RNWalker",
+        },
+        {
+          name: "Sarah O'Connor",
+          img: "https://avatars.githubusercontent.com/u/135848217?v=4",
+          github: "https://github.com/sarahoco014",
+        },
+        {
+          name: "Charlotte Gould",
+          img: "	https://avatars.githubusercontent.com/u/131787016?v=4",
+          github: "https://github.com/Charlotteg1",
         },
       ],
     },
     {
       id: 1,
-      title: "Vexa",
-      date: "Oct 2022 - Present",
+      title: "Jonagotchi",
+      date: "Aug 2023",
       description:
-        "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+        "Developed the front end for a virtual pet",
       image:
-        "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+        "",
       tags: [
-        "React Js",
-        "MongoDb",
-        "Node Js",
-        "Express Js",
-        "Redux",
-        "NodeMailer",
+        "React Js", "Java",
+
       ],
       category: "web app",
-      github: "https://github.com/rishavchanda/Project-Management-App",
+      github: "https://github.com/GeorgiaCD/Frontend_pet_react_app",
       external: "https://vexa-app.netlify.app/",
+      member: [
+        {
+          name: "Sandra Martinez",
+          img: "https://avatars.githubusercontent.com/u/98602406?s…00&u=d0235b1c52cc289c7da69b817c4e702dfd1b2715&v=4",
+          github: "https://github.com/sandramtzd",
+        },
+        {
+          name: "Abdulaziz",
+          img: "https://avatars.githubusercontent.com/u/107209170?v=4",
+          github: "https://github.com/Abdulaziz-MI",
+        },
+        {
+          name: "Jannah Anwar",
+          img: "https://avatars.githubusercontent.com/u/135851473?v=4",
+          github: "https://github.com/jannahthecodemaster",
+        },
+        {
+          name: "Georgia Crawford-Dellar",
+          img: "https://avatars.githubusercontent.com/u/133099012?v=4",
+          github: "https://github.com/GeorgiaCD",
+        },
+      ],
     },
     {
       id: 2,
-      title: "Brain Tumor Detection",
-      date: "Jan 2023 - Mar 2023",
+      title: "Coming soon",
+      date: "",
       description:
-        "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+        "",
       image:
-        "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-      tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+        "",
+      tags: [""],
       category: "data",
-      github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-      external: "https://brain-tumor.netlify.app/",
-      member: [
-        {
-          name: "Rishav Chanda",
-          img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-          linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-          github: "https://github.com/rishavchanda/",
-        },
-        {
-          name: "Upasana Chaudhuri",
-          img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-          linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-          github: "https://github.com/upasana0710",
-        },
-      ],
+      github: "",
+      external: "",
+      
     },
     {
       id: 3,
-      title: "Buckoid",
-      date: "Dec 2021 - Apr 2022",
+      title: "MindMentor",
+      date: "Oct 2023",
       description:
-        "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+        "Developed a mental health app powered by AI for more inclusive workplaces",
       image:
-        "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-      tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
+        "",
+      tags: ["React Native", "Android Studio"],
       category: "mobile app",
-      github: "https://github.com/rishavchanda/Buckoid-Android-App",
-      external: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+      github: "https://github.com/sarahoco014/Mind_Mentor_Frontend",
+      external: "",
+
+      member: [
+        {
+          name: "Sandra Martinez",
+          img: "https://avatars.githubusercontent.com/u/98602406?s…00&u=d0235b1c52cc289c7da69b817c4e702dfd1b2715&v=4",
+          github: "https://github.com/sandramtzd",
+        },
+        {
+          name: "Rebecca Walker",
+          img: "https://avatars.githubusercontent.com/u/78052216?v=4",
+          github: "https://github.com/RNWalker",
+        },
+        {
+          name: "Sarah O'Connor",
+          img: "https://avatars.githubusercontent.com/u/135848217?v=4",
+          github: "https://github.com/sarahoco014",
+        },
+        {
+          name: "Kevin Chan",
+          img: "https://avatars.githubusercontent.com/u/40737044?v=4",
+          github: "https://github.com/Kibiko",
+        },
+        {
+          name: "Blezzy Dela Cruz",
+          img: "https://avatars.githubusercontent.com/u/138067410?v=4",
+          github: "https://github.com/blezzydcruz",
+        },
+        {
+          name: "Rohaib Ahmed",
+          img: "https://avatars.githubusercontent.com/u/138167825?v=4",
+          github: "https://github.com/rohaib1",
+        },
+      ],
+
+
     },
-    {
-      id: 4,
-      title: "Job Finding App",
-      date: "Jun 2023 - Jul 2023",
-      description:
-        "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-      image:
-        "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-      tags: ["React Native", "JavaScript", "Axios"],
-      category: "mobile app",
-      github: "https://github.com/rishavchanda/Job-finder-App",
-      webapp: "https://github.com/rishavchanda/Job-finder-App",
-    },
+
   ];

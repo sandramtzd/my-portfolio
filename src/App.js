@@ -15,15 +15,13 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Hero />
       <Socials />
+      <Hero />
       <About />
       <Projects />
       <Experience />
       <Contact />
-      
       <Footer />
-      
     </Router>
   )
 }

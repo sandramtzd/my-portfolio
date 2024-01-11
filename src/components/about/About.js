@@ -22,7 +22,6 @@ const About = () => {
             <p>{bio.about[1]}</p><br/>
             <p>{bio.about[2]}</p><br/>
           </AboutContent>
-
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill>

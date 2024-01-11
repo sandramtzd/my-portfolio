@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import { ProjectsContainer, Heading, ToggleGroup, ToggleButton, CardContainer } from './ProjectsStyle'
+import { ProjectsContainer, Heading, ToggleGroup, ToggleButton, CardContainer, Divider } from './ProjectsStyle'
 import sr from '../../utils/Scroll';
 import { srConfig } from '../../utils/ScrollConfig';
 import { projects } from '../../utils/data/constants';
@@ -20,18 +20,24 @@ const Projects = ({openModal,setOpenModal}) => {
             :
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
+
+          <Divider />
           
           {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>Web app's</ToggleButton>
+            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>Web App's</ToggleButton>
             :
             <ToggleButton value="web app" onClick={() => setToggle('web app')}>Web App's</ToggleButton>
           }
+
+          <Divider />
          
           {toggle === 'mobile app' ?
             <ToggleButton active value="mobile app" onClick={() => setToggle('mobile app')}>Mobile App's</ToggleButton>
             :
             <ToggleButton value="android app" onClick={() => setToggle('mobile app')}>Mobile App's</ToggleButton>
           }
+
+          <Divider />
          
           {toggle === 'data' ?
             <ToggleButton active value="data" onClick={() => setToggle('data')}>Data Analysis</ToggleButton>

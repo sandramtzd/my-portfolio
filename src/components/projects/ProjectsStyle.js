@@ -4,17 +4,19 @@ import styled from "styled-components";
 export const ProjectsContainer = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     position: relative;
     padding: 150px 200px;
+    z-index: 1;
+    align-items: center;
+
     @media (max-width: 960px) {
       padding: 66px 16px;
     }
     @media (max-width: 640) {
       padding: 32px 16px;
     }
-    z-index: 1;
+    
   
 
 `;
@@ -43,13 +45,12 @@ export const Heading = styled.h1`
 export const ToggleGroup = styled.div`
     display: flex;
     border: 1.5px solid var(--color-primary);
-    color: var(--color-primary);
-    
-    font-size: 16px;
-    border-radius: 12px,
+    color:  var(--color-light-variant);
+    font-size: 1.5rem;
+    border-radius: 6px;
     font-weight: 500;
-    margin: 22px 0;
-    justify-content: space-between;
+    margin: 22px 0px;
+    margin-bottom: 50px;
 
     @media (max-width: 768px) {
         font-size: 12px;
@@ -57,21 +58,15 @@ export const ToggleGroup = styled.div`
 
 `;
 
-export const ToggleButton = styled.button`
+export const ToggleButton = styled.div`
     padding: 8px 18px;
+    border-radius: 6px;
     cursor: pointer;
-    color: var(--color-primary);
-    background-color: transparent;
-    
-    
-    
+
     &:active {
-        background-color: var(--color-primary);
-    }
-
+        background-color: var(--color-bg-variant);
     &:hover {
-        background-color: var(--color-primary);
-
+        background-color: var(--color-bg-variant);
     }
     @media (max-width: 768px) {
         padding: 6px 8px;
@@ -79,6 +74,14 @@ export const ToggleButton = styled.button`
     }
 
 `;
+
+export const Divider = styled.div`
+    width: 1.5px;
+    background: var(--color-primary);
+
+
+`;
+
 
 export const CardContainer = styled.div`
     display: flex;
