@@ -5,7 +5,9 @@
   My Portfolio Website
 </h1>
 <p align="center">
-  My first website built with React and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>. Inspired by 
+  My first website built with React and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>.</p>
+<p align= "center">
+  Inspired by 
   <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>,
   <a href="https://github.com/chandrikadeb7/chandrikadeb7.github.io">Chandrika Deb</a> and
   <a href="https://github.com/rishavchanda/rishavchanda.github.io">Richav Chanda</a>
