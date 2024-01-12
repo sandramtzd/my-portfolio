@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ab59549.css",
-    "main.js": "/static/js/main.cdd8436f.js",
-    "static/media/meabout.png": "/static/media/meabout.3cdf74d0954b51275b0a.png",
-    "static/media/Sandra_CV.pdf": "/static/media/Sandra_CV.544c8db2548ba21c69b7.pdf",
-    "static/media/Logo.png": "/static/media/Logo.3ef18d77b4678c24a83a.png",
-    "index.html": "/index.html",
-    "main.7ab59549.css.map": "/static/css/main.7ab59549.css.map",
-    "main.cdd8436f.js.map": "/static/js/main.cdd8436f.js.map"
+    "main.css": "/react-gh-pages/static/css/main.7ab59549.css",
+    "main.js": "/react-gh-pages/static/js/main.7b14d502.js",
+    "static/media/meabout.png": "/react-gh-pages/static/media/meabout.3cdf74d0954b51275b0a.png",
+    "static/media/Sandra_CV.pdf": "/react-gh-pages/static/media/Sandra_CV.544c8db2548ba21c69b7.pdf",
+    "static/media/Logo.png": "/react-gh-pages/static/media/Logo.3ef18d77b4678c24a83a.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.7ab59549.css.map": "/react-gh-pages/static/css/main.7ab59549.css.map",
+    "main.7b14d502.js.map": "/react-gh-pages/static/js/main.7b14d502.js.map"
   },
   "entrypoints": [
     "static/css/main.7ab59549.css",
-    "static/js/main.cdd8436f.js"
+    "static/js/main.7b14d502.js"
   ]
 }
