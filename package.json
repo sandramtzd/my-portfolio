@@ -1,7 +1,7 @@
 {
   "name": "my_portfolio",
   "version": "0.1.0",
-  "homepage": "https://sandramtzd.github.io/sandramtzd.github.io",
+  "homepage": "https://sandramtzd.github.io/",
   "private": true,
   "dependencies": {
     "animejs": "^3.1.0",
