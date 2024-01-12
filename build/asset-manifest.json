@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sandramtzd.github.io/static/css/main.7ab59549.css",
+    "main.js": "/sandramtzd.github.io/static/js/main.165cc2e1.js",
+    "static/media/meabout.png": "/sandramtzd.github.io/static/media/meabout.3cdf74d0954b51275b0a.png",
+    "static/media/Sandra_CV.pdf": "/sandramtzd.github.io/static/media/Sandra_CV.544c8db2548ba21c69b7.pdf",
+    "static/media/Logo.png": "/sandramtzd.github.io/static/media/Logo.3ef18d77b4678c24a83a.png",
+    "index.html": "/sandramtzd.github.io/index.html",
+    "main.7ab59549.css.map": "/sandramtzd.github.io/static/css/main.7ab59549.css.map",
+    "main.165cc2e1.js.map": "/sandramtzd.github.io/static/js/main.165cc2e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ab59549.css",
+    "static/js/main.165cc2e1.js"
+  ]
+}
