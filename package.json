@@ -1,7 +1,7 @@
 {
+  "homepage": "https://sandramtzd.github.io/react-gh-pages",
   "name": "my_portfolio",
   "version": "0.1.0",
-  "homepage": "sandramtzd.github.io",
   "private": true,
   "dependencies": {
     "animejs": "^3.1.0",
