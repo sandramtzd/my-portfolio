@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../../assets/Logo.png'
 import CV from '../../assets/Sandra_CV.pdf'
 import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu } from './NavStyle'
-import { FaBars } from "react-icons/fa6";
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
 
 
 
@@ -13,9 +13,9 @@ const Navbar = () => {
     <Nav>
       <NavContainer>
         <NavLogo>
-          <a href='#hero'><img src={Logo} alt='hummingbird' style={{width: "100px"}}/></a>
+          <a href='/'><img src={Logo} alt='hummingbird' style={{width: "70px"}}/></a>
         </NavLogo>
-        <MobileIcon><FaBars onClick={() => {setIsOpen(!isOpen);}} /></MobileIcon>
+        <MobileIcon><HiMiniBars3BottomRight onClick={() => {setIsOpen(!isOpen);}} /></MobileIcon>
 
         <NavItems>  
           <a href='#about'>About</a>
