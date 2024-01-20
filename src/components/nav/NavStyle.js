@@ -65,13 +65,18 @@ export const ButtonContainer = styled.div`
 export const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 768px) {
-      display: block;
       position: absolute;
-      top: 0;
+      top: 5%;
       right: 0;
-      transform: translate(-100%, 40%);
-      font-size: 1.7rem;
+      display: flex;
       cursor: pointer;
+      font-size: 2rem;
+      z-index: 10;
+      transform: translate(-100%, 40%);
+
+      &:focus {
+        outline: none;
+      }
     }
 `;
 
@@ -79,15 +84,19 @@ export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 30%;
-    padding: 12px 0px 12px 20px;
     background: var(--color-bg-light);
-    transition: all 0.6s ease-in-out;
-    border-radius: 5px 5px 5px 5px;
+    height: 100vh;
+    text-align: left;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+
+    @media (max-width: 640px) {
+      width: 50%
+    }
 `;
 
 

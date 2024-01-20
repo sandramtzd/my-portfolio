@@ -32,6 +32,7 @@ const Navbar = () => {
       
       {
         isOpen && (
+          
           <MobileMenu isOpen={isOpen}>
             <a href='#about' onClick={() => {setIsOpen(!isOpen);}} >About</a>
             <a href='#projects' onClick={() => {setIsOpen(!isOpen);}} >Projects</a>
