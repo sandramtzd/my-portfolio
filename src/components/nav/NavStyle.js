@@ -62,7 +62,7 @@ export const ButtonContainer = styled.div`
     }
 `;
 
-export const MobileIcon = styled.div`
+export const MobileIcon = styled.button`
     display: none;
     @media screen and (max-width: 768px) {
       position: absolute;
@@ -72,6 +72,8 @@ export const MobileIcon = styled.div`
       cursor: pointer;
       font-size: 2rem;
       z-index: 10;
+      background: transparent;
+      color: var(--primary);
       transform: translate(-100%, 40%);
 
       &:focus {
@@ -80,7 +82,7 @@ export const MobileIcon = styled.div`
     }
 `;
 
-export const MobileMenu = styled.div`
+export const MobileMenu = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +94,8 @@ export const MobileMenu = styled.div`
     top: 0;
     right: 0;
     gap: 20px;
-    transition: transform 0.3s ease-in-out;
+    
+    
 
     @media (max-width: 640px) {
       width: 50%

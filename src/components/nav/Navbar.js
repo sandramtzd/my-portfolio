@@ -32,14 +32,16 @@ const Navbar = () => {
       
       {
         isOpen && (
-          
-          <MobileMenu isOpen={isOpen}>
-            <a href='#about' onClick={() => {setIsOpen(!isOpen);}} >About</a>
-            <a href='#projects' onClick={() => {setIsOpen(!isOpen);}} >Projects</a>
-            <a href='#experience' onClick={() => {setIsOpen(!isOpen);}} >Experience</a>
-            <a href='#contact' onClick={() => {setIsOpen(!isOpen);}} >Contact</a>
-            <a href={CV} download className='btn' target='_blank' rel="noreferrer">Resume</a>
-          </MobileMenu>
+          <div>
+            <MobileIcon onClick={() => {setIsOpen(!isOpen);}}><HiMiniBars3BottomRight  /></MobileIcon>
+            <MobileMenu isOpen={isOpen} >
+              <a href='#about' onClick={() => {setIsOpen(!isOpen);}} >About</a>
+              <a href='#projects' onClick={() => {setIsOpen(!isOpen);}} >Projects</a>
+              <a href='#experience' onClick={() => {setIsOpen(!isOpen);}} >Experience</a>
+              <a href='#contact' onClick={() => {setIsOpen(!isOpen);}} >Contact</a>
+              <a href={CV} download className='btn' target='_blank' rel="noreferrer">Resume</a>
+            </MobileMenu>
+          </div>
         )
       }
       </NavContainer>
