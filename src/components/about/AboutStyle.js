@@ -6,14 +6,15 @@ export const AboutContainer = styled.section`
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    padding: 150px 200px;
+    padding: 150px 100px;
     z-index: 1;
 
     @media (max-width: 960px) {
-        padding: 66px 16px;
+        padding: 100px 100px;
     }
-    @media (max-width: 640) {
-        padding: 32px 16px;
+    @media (max-width: 768px) {
+        padding: 150px 20px;
+        
     }   
 
 
@@ -24,18 +25,18 @@ export const Heading = styled.h1`
     position: relative;
     display: flex;
     align-items: center;
-    margin: 10px 0 40px;
+    margin: 10px 0 20px;
     width: 100%;
     white-space: nowrap;
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     color: var(--color-light);
     
-    line-height: 1.3;
+    line-height: 1;
 
     &:after {
         content: "";
         width: 100%;
-        height: 1.5px;
+        height: 0.5px;
         background: var(--color-light);
         margin-left: 50px;
         
@@ -46,8 +47,9 @@ export const Heading = styled.h1`
 
 export const FlexContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+
     
     
     
@@ -56,8 +58,8 @@ export const FlexContainer = styled.div`
 
 export const AboutContent = styled.div`
     width: 100%;
-    font-size: 20px;
-    justify-content: space-evenly;
+    font-size: 15px;
+    
 
    
    
@@ -66,10 +68,8 @@ export const AboutContent = styled.div`
 
 export const SkillsContainer = styled.ul`
     display: grid;
-    grid-template-columns:repeat(5, 170px);
+    grid-template-columns:repeat(5, 100px);
     overflow: hidden;
-    padding: 0;
-    margin: 20px 0 0 0;
     list-style: none;
 
 `;
@@ -77,9 +77,9 @@ export const SkillsContainer = styled.ul`
 export const Skill= styled.div`
     position:relative;
     margin-bottom: 10px;
-    padding-left: 20px;
     font-family: 'Karla' sans-serif;
     color: var(--color-secondary);
+    
 
 `;
 
@@ -100,17 +100,15 @@ export const SkillImage= styled.div`
     position:relative;
 `;
 
-export const LeftContainer = styled.div`
-    position:relative;
-`;
+
 
 
 
 export const Picture = styled.div`
     position: relative;
-    width: 40%;
-    max-width: 300px;
-    margin-left: 60px;
+    width: 50px;
+    margin-left: 50px;
+    
     
 `;
 
@@ -127,7 +125,6 @@ export const Avatar = styled.img`
 
 export const AvatarLink = styled.a`
     
-    width: 100%
     position: relative;
     border-radius: 3px;
     margin-left: -20px;

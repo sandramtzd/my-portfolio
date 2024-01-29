@@ -16,13 +16,12 @@ const About = () => {
     <AboutContainer id='about' ref={revealContainer} >
       <Heading>About</Heading>
       <FlexContainer>
-        <LeftContainer>
           <AboutContent>
             <p>{bio.about[0]}</p><br/>
             <p>{bio.about[1]}</p><br/>
             <p>{bio.about[2]}</p><br/>
-          </AboutContent>
-        <SkillsContainer>
+
+            <SkillsContainer>
           {skills.map((skill) => (
             <Skill>
               <SkillTitle>{skill.title}</SkillTitle>
@@ -35,18 +34,15 @@ const About = () => {
                 ))}
               </SkillList>
 
-            </Skill>
-            
-     
-         
+            </Skill>  
           ))}
 
         </SkillsContainer>
-        </LeftContainer>
+          </AboutContent>
 
         <Picture>
           <AvatarLink href= 'https://github.com/sandramtzd'>
-            <Avatar src={MeAbout} alt='Avatar'/>
+            <Avatar src={MeAbout} alt='Avatar' style={{width: "300px"}}/>
           </AvatarLink>
         </Picture>
       </FlexContainer>
