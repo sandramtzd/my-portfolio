@@ -100,7 +100,7 @@ export const MobileMenu = styled.nav`
     
 
     @media (max-width: 640px) {
-      width: 40%
+      width: 40%;
     }
 `;
 
