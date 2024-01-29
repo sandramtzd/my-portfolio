@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SocialsContainer = styled.div`
-    width: 150px;
+    width: 100px;
     position: fixed;
     bottom: 0px;
     left: 40;
@@ -10,8 +10,8 @@ export const SocialsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    line-height: 1.3;
-    font-size: 3rem;
+    line-height: 1;
+    font-size: 2rem;
     padding: 10px;
 
     &:after {
@@ -21,6 +21,10 @@ export const SocialsContainer = styled.div`
         background: var(--color-primary);
 
     }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+      }
 
 
 

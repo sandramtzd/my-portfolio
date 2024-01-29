@@ -11,9 +11,9 @@ export const Nav = styled.div`
     position: sticky;
     top: 0;
     z-index: 10;
-    transition: var(--transition);
+   
     @media (max-width: 960px) {
-        trasition: 0.8s all ease;
+        transition: 0.8s all ease;
     }
 `;
 
@@ -63,7 +63,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const MobileIcon = styled.button`
-    display: none;
+   display: none;
     @media screen and (max-width: 768px) {
       position: absolute;
       top: 5%;
@@ -74,7 +74,8 @@ export const MobileIcon = styled.button`
       z-index: 10;
       background: transparent;
       color: var(--primary);
-      transform: translate(-100%, 40%);
+      transform: translate(-100%, 50%);
+      transition: all 0.3s ease-in-out;
 
       &:focus {
         outline: none;
@@ -90,15 +91,16 @@ export const MobileMenu = styled.nav`
     height: 100vh;
     text-align: left;
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     gap: 20px;
-    
+    transition: transform 0.3s ease-in-out;
+    transform: ${({ isOpen }) => isOpen ? 'translateX(-0%)' : 'translateX(100%)'};
     
 
     @media (max-width: 640px) {
-      width: 50%
+      width: 40%
     }
 `;
 

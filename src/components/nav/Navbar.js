@@ -3,11 +3,37 @@ import Logo from '../../assets/Logo.png'
 import CV from '../../assets/Sandra_CV.pdf'
 import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu } from './NavStyle'
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { AiOutlineClose } from "react-icons/ai";
 
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+ 
+
+  const closeMobileMenu = () => {
+    setIsOpen(false);
+    
+  };
+
+  React.useEffect (() => {
+    const handleResize = () => {
+      closeMobileMenu();
+    };
+
+    const handleClickOutside = (event) => {
+      if (isOpen && !event.target.closest('.mobile-menu')) {
+        closeMobileMenu();
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isOpen]);
   
   return (
     <Nav>
@@ -15,7 +41,7 @@ const Navbar = () => {
         <NavLogo>
           <a href='/'><img src={Logo} alt='hummingbird' style={{width: "70px"}}/></a>
         </NavLogo>
-        <MobileIcon><HiMiniBars3BottomRight onClick={() => {setIsOpen(!isOpen);}} /></MobileIcon>
+ 
 
         <NavItems>  
           <a href='#about'>About</a>
@@ -29,11 +55,13 @@ const Navbar = () => {
         </ButtonContainer>
 
 
-      
-      {
-        isOpen && (
+
+    
+        
           <div>
-            <MobileIcon onClick={() => {setIsOpen(!isOpen);}}><HiMiniBars3BottomRight  /></MobileIcon>
+            <MobileIcon isOpen={isOpen} onClick={() => {setIsOpen(!isOpen)}}>
+            {isOpen ? <AiOutlineClose /> : <HiMiniBars3BottomRight />}  </MobileIcon>
+
             <MobileMenu isOpen={isOpen} >
               <a href='#about' onClick={() => {setIsOpen(!isOpen);}} >About</a>
               <a href='#projects' onClick={() => {setIsOpen(!isOpen);}} >Projects</a>
@@ -42,8 +70,7 @@ const Navbar = () => {
               <a href={CV} download className='btn' target='_blank' rel="noreferrer">Resume</a>
             </MobileMenu>
           </div>
-        )
-      }
+          
       </NavContainer>
     </Nav>
 

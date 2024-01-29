@@ -5,13 +5,7 @@ export const Hero = styled.div`
   justify-content: center;
   position: relative;
   padding: 20px 200px;
-  @media (max-width: 960px) {
-    padding: 66px 16px;
-  }
-  @media (max-width: 640) {
-    padding: 32px 16px;
-  }
-  z-index: 1;
+
 
 `;
 
@@ -25,20 +19,30 @@ export const HeroContainer = styled.div`
 export const Greeting = styled.h3`
   transition-delay: 100ms;
   margin: 0px 0px 20px 0px;
-  font-size: 25px;
+  font-size: 16px;
   font-family: 'Karla', sans-serif;
   display: flex;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   
 `;
 
 export const Name = styled.h1`
   transition-delay: 200ms;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 600;
   display: flex;
   line-height: 1.1;
   margin: 0px;
   color: var(--color-light)
+
+  @media (max-width: 768px) {
+    font-size: 60px;
+    color: var(--color-light)
+  }
   
 `;
 
