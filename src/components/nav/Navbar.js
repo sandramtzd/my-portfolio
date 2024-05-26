@@ -41,7 +41,6 @@ const Navbar = () => {
         <NavLogo>
           <a href='/'><img src={Logo} alt='hummingbird' style={{width: "70px"}}/></a>
         </NavLogo>
- 
 
         <NavItems>  
           <a href='#about'>About</a>
@@ -54,10 +53,6 @@ const Navbar = () => {
           <a href={CV} download className='btn' target='_blank' rel="noreferrer">Resume</a>
         </ButtonContainer>
 
-
-
-    
-        
           <div>
             <MobileIcon isOpen={isOpen} onClick={() => {setIsOpen(!isOpen)}}>
             {isOpen ? <AiOutlineClose /> : <HiMiniBars3BottomRight />}  </MobileIcon>

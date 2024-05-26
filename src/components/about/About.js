@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import { AboutContainer, Heading, FlexContainer, AboutContent, Picture, Avatar, AvatarLink, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage, LeftContainer} from './AboutStyle'
+import { AboutContainer, Heading, FlexContainer, AboutContent, Picture, Avatar, AvatarLink, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage, LeftContainer} from './AboutStyle.js'
 import { bio, skills } from '../../utils/data/constants';
 import sr from '../../utils/Scroll';
 import { srConfig } from '../../utils/ScrollConfig';

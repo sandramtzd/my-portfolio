@@ -23,7 +23,7 @@ export const Heading = styled.h1`
     margin: 10px 0 40px;
     width: 100%;
     white-space: nowrap;
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: 600;
     line-height: 1.3;
     color: var(--color-light)
@@ -33,9 +33,9 @@ export const Heading = styled.h1`
 `;
 
 export const Description = styled.p`
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
-    max-width: 600px;
+    max-width: 100%;
     color: var(--color-secondary);
 
 
@@ -43,8 +43,8 @@ export const Description = styled.p`
 
 
 export const ContactForm = styled.form`
-    width: 95%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     padding: 32px;
