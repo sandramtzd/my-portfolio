@@ -46,7 +46,7 @@ export const Heading = styled.h1`
 
 
 export const FlexContainer = styled.div`
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
 
@@ -97,7 +97,7 @@ export const SkillItem= styled.div`
 `;
 
 export const SkillImage= styled.div`
-    position:relative;
+    position: relative;
 `;
 
 
@@ -106,7 +106,7 @@ export const SkillImage= styled.div`
 
 export const Picture = styled.div`
     position: relative;
-    width: 50px;
+    width: 30px;
     margin-left: 50px;
     
     
