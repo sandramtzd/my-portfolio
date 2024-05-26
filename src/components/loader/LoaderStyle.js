@@ -14,7 +14,7 @@ export const LoaderContainer = styled.div`
 
 `;
 
-export const Logo = styled.div`
+export const LogoWrapper = styled.div`
     width: max-content;
     max-width: 100px;
     transition: var(--transition);

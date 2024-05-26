@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState} from 'react';
+import Loader from './components/loader/Loader'
 import Navbar from './components/nav/Navbar'
 import Hero from './components/hero/Hero'
 import Socials from './components/socials/Socials'
@@ -12,8 +13,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 const App = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const finishLoading = () => {
+    setIsLoading(false);
+  }
   return (
     <Router>
+      <Loader finishLoading={finishLoading} />
       <Navbar />
       <Socials />
       <Hero />

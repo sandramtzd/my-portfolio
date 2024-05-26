@@ -1,12 +1,20 @@
 import React from 'react'
-import { LoaderContainer, Logo } from './LoaderStyle'
+import { LoaderContainer, LogoWrapper } from './LoaderStyle'
 import Helmet from 'react-helmet';
 import anime from 'animejs';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '../../assets/Logo.svg'
 
 const Loader = ({finishLoading}) => {
     const [isMounted, setIsMounted] =useState(false);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => setIsMounted(true), 10);
+        animate();
+        return () => clearTimeout(timeout);
+      }, []);
+
+
     const animate = () => {
         const loader = anime.timeline ({
             complete: () => finishLoading(),
@@ -47,19 +55,14 @@ const Loader = ({finishLoading}) => {
             });
     };
 
-    useEffect(() => {
-        const timeout = setTimeout(() => setIsMounted(true), 10);
-        animate();
-        return () => clearTimeout(timeout);
-      }, []);
 
   return (
     <LoaderContainer className='loader' isMounted={isMounted}>
         <Helmet bodyAttributes={{ class: `hidden` }}/>
-        
-        <Logo isMounted ={isMounted}>
+
+        <LogoWrapper isMounted ={isMounted}>
             <img src={Logo} alt='hummingbird'/>
-        </Logo>
+        </LogoWrapper>
       
     </LoaderContainer>
   )
