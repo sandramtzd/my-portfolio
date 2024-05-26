@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/Logo.svg'
 import CV from '../../assets/Sandra_CV.pdf'
 import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu } from './NavStyle'
 import { HiMiniBars3BottomRight } from "react-icons/hi2";

@@ -3,9 +3,10 @@ import { LoaderContainer, Logo } from './LoaderStyle'
 import Helmet from 'react-helmet';
 import anime from 'animejs';
 import { useState } from 'react';
-import Logo from '../../assets/favicon.ico'
+import Logo from '../../assets/Logo.svg'
 
 const Loader = ({finishLoading}) => {
+    const [isMounted, setIsMounted] =useState(false);
     const animate = () => {
         const loader = anime.timeline ({
             complete: () => finishLoading(),
@@ -13,7 +14,7 @@ const Loader = ({finishLoading}) => {
 
         loader
             .add ({
-                targets: '#favicon path',
+                targets: '#logo path',
                 delay: 300,
                 duration: 1500,
                 easing: 'easeInOutQuart',
@@ -22,14 +23,14 @@ const Loader = ({finishLoading}) => {
             })
 
             .add ({
-                targets: '#favicon #B',
+                targets: '#logo #B',
                 duration: 700,
                 easing: 'easeInOutQuart',
                 opacity: 1,
             })
 
             .add ({
-                targets: '#favicon',
+                targets: '#logo',
                 delay: 500,
                 duration: 300,
                 easing: 'easeInOutQuart',
@@ -46,8 +47,6 @@ const Loader = ({finishLoading}) => {
             });
     };
 
-    const [isMounted, setIsMounted] = useState(false);
-
     useEffect(() => {
         const timeout = setTimeout(() => setIsMounted(true), 10);
         animate();
@@ -55,8 +54,9 @@ const Loader = ({finishLoading}) => {
       }, []);
 
   return (
-    <LoaderContainer className='loader'>
+    <LoaderContainer className='loader' isMounted={isMounted}>
         <Helmet bodyAttributes={{ class: `hidden` }}/>
+        
         <Logo isMounted ={isMounted}>
             <img src={Logo} alt='hummingbird'/>
         </Logo>
