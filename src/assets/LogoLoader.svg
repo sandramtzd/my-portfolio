@@ -5,10 +5,10 @@
  width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
-Created by potrace 1.10, written by Peter Selinger 2001-2011
+Created by potrace 1.10, written by Peter Selinger 2001-2011 On Website picsvg.com
 </metadata>
 <g transform="translate(0.000000,300.000000) scale(0.050000,-0.050000)"
-fill="#fbbd98" stroke="none">
+fill="none" stroke="ffbe98" stroke-width = '30'>
 <path d="M1093 5244 c-6 -9 -16 -146 -24 -305 -45 -948 267 -1535 955 -1797
 l53 -20 -99 -149 c-328 -493 -361 -1213 -83 -1833 55 -122 227 -400 248 -400
 21 0 5 74 -24 110 -96 122 -239 746 -239 1047 0 619 140 931 599 1333 237 208
@@ -25,3 +25,4 @@ l53 -20 -99 -149 c-328 -493 -361 -1213 -83 -1833 55 -122 227 -400 248 -400
 -47 -464 51 -138 40 -323 38 -439 -3z"/>
 </g>
 </svg>
+

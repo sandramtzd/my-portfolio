@@ -11,25 +11,34 @@ export const LoaderContainer = styled.div`
     left: 0;
     right: 0;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 `;
 
 export const LogoWrapper = styled.div`
     width: max-content;
-    max-width: 100px;
     transition: var(--transition);
     
     svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    fill: none;
-    user-select: none;
-    #B {
-        opacity: 0;
-    }
-    }
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin: 0 auto;
+        fill: none;
+        user-select: none;
+        stroke: rgba(251, 189, 152, 1); // Initial stroke color
+        stroke-width: 20;
+
+    path {
+        fill: none;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        }
+      }
 `;
+
 
 

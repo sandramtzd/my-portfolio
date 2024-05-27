@@ -1,9 +1,9 @@
 import React from 'react'
-import { LoaderContainer, LogoWrapper } from './LoaderStyle'
+import { LoaderContainer, LogoWrapper} from './LoaderStyle'
 import Helmet from 'react-helmet';
 import anime from 'animejs';
 import { useState, useEffect } from 'react';
-import Logo from '../../assets/Logo.svg'
+import { ReactComponent as Logo } from '../../assets/LogoLoader.svg';
 
 const Loader = ({finishLoading}) => {
     const [isMounted, setIsMounted] =useState(false);
@@ -23,19 +23,20 @@ const Loader = ({finishLoading}) => {
         loader
             .add ({
                 targets: '#logo path',
-                delay: 300,
+                strokeDasharray: [anime.setDashoffset, 0],
+                easing: 'easeInOutQuart',
                 duration: 1500,
-                easing: 'easeInOutQuart',
-                strokeDashoffset: [anime.setDashoffset, 0],
+                delay: (el, i) => i * 250, // Delay each path animation for a staggered effect
 
             })
 
-            .add ({
-                targets: '#logo #B',
-                duration: 700,
+            .add({
+                targets: '#logo path',
+                fill: ['rgba(251, 189, 152, 0)', 'rgba(251, 189, 152, 1)'],
                 easing: 'easeInOutQuart',
-                opacity: 1,
-            })
+                duration: 1500,
+                delay: (el, i) => i * 250,
+              }, '-=1500') // Start fill animation halfway through the stroke animation
 
             .add ({
                 targets: '#logo',
@@ -61,7 +62,7 @@ const Loader = ({finishLoading}) => {
         <Helmet bodyAttributes={{ class: `hidden` }}/>
 
         <LogoWrapper isMounted ={isMounted}>
-            <img src={Logo} alt='hummingbird'/>
+            <Logo id='logo'/>
         </LogoWrapper>
       
     </LoaderContainer>
