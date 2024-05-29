@@ -57,6 +57,7 @@ export const ButtonContainer = styled.div`
     justify-content: end;
     align-items: center;
     padding: 0 18px;
+    
     @media screen and (max-width: 768px) {
       display: none;
     }
@@ -71,7 +72,7 @@ export const MobileIcon = styled.button`
       display: flex;
       cursor: pointer;
       font-size: 2rem;
-      z-index: 10;
+      z-index: 15;
       background: transparent;
       color: var(--primary);
       transform: translate(-100%, 50%);
@@ -88,7 +89,8 @@ export const MobileMenu = styled.nav`
     flex-direction: column;
     justify-content: center;
     background: var(--color-bg-light);
-    height: 100vh;
+    height: 100%;
+    width: 40%;
     text-align: left;
     padding: 2rem;
     position: fixed;
@@ -96,14 +98,25 @@ export const MobileMenu = styled.nav`
     right: 0;
     gap: 20px;
     transition: transform 0.3s ease-in-out;
-    transform: ${({ isOpen }) => isOpen ? 'translateX(-0%)' : 'translateX(100%)'};
-    
+    transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+    z-index: 10;  // Ensures the menu is above everything else
 
-    @media (max-width: 640px) {
-      width: 40%;
-    }
 `;
 
+export const BlurBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  transition: opacity 0.3s ease-in-out;
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+
+`;
 
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../assets/Logo.svg'
 import CV from '../../assets/Sandra_CV.pdf'
-import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu } from './NavStyle'
+import { Nav, NavContainer, NavLogo, NavItems, MobileIcon, ButtonContainer, MobileMenu, BlurBackground } from './NavStyle'
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -9,6 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  document.body.style.overflow = 'auto';
  
 
   const closeMobileMenu = () => {
@@ -54,8 +55,11 @@ const Navbar = () => {
         </ButtonContainer>
 
           <div>
-            <MobileIcon isOpen={isOpen} onClick={() => {setIsOpen(!isOpen)}}>
-            {isOpen ? <AiOutlineClose /> : <HiMiniBars3BottomRight />}  </MobileIcon>
+          <MobileIcon className="mobile-icon" isOpen={isOpen} onClick={() => { setIsOpen(!isOpen) }}>
+          {isOpen ? <AiOutlineClose /> : <HiMiniBars3BottomRight />}
+          </MobileIcon>
+
+            <BlurBackground isOpen={isOpen} onClick={closeMobileMenu} />
 
             <MobileMenu isOpen={isOpen} >
               <a href='#about' onClick={() => {setIsOpen(!isOpen);}} >About</a>
@@ -65,7 +69,7 @@ const Navbar = () => {
               <a href={CV} download className='btn' target='_blank' rel="noreferrer">Resume</a>
             </MobileMenu>
           </div>
-          
+
       </NavContainer>
     </Nav>
 
