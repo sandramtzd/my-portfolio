@@ -32,11 +32,12 @@ const Header = () => {
         <Description>{bio.description[0]}</Description>
         <Description>{bio.description[1]}</Description>
         <Description>{bio.description[2]}</Description>
-        
-        
+
         <ButtonContact>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
-          </ButtonContact>
+        </ButtonContact>
+        
+
           
 
       </HeroContainer>

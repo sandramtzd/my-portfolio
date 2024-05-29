@@ -43,6 +43,7 @@ body {
     color: var(--color-primary);
     line-height: 1.7;
     overflow-x: hidden;
+    
 
 }
 
@@ -90,6 +91,13 @@ a:hover {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--color-light);
+    color: var(--color-bg);
+    border-color: transparent;
 }
 
 
