@@ -23,7 +23,7 @@ const App = () => {
     <Router>
       <Loader finishLoading={finishLoading} />
       <Navbar />
-      <Socials />
+      <Socials isFooter={false} />
       <Hero />
       <About />
       <Projects />
