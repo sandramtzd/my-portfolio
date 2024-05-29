@@ -42,7 +42,7 @@ const About = () => {
 
         <Picture>
           <AvatarLink href= 'https://github.com/sandramtzd'>
-            <Avatar src={MeAbout} alt='Avatar' style={{width: "300px"}}/>
+            <Avatar src={MeAbout} alt='Avatar' style={{width: "200px"}}/>
           </AvatarLink>
         </Picture>
       </FlexContainer>
