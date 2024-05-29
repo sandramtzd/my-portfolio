@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dac309a.css",
-    "main.js": "/static/js/main.7f336f82.js",
+    "main.css": "/static/css/main.45db5760.css",
+    "main.js": "/static/js/main.285102cd.js",
     "static/media/meabout.png": "/static/media/meabout.3cdf74d0954b51275b0a.png",
-    "static/media/Sandra_CV.pdf": "/static/media/Sandra_CV.544c8db2548ba21c69b7.pdf",
-    "static/media/Logo.png": "/static/media/Logo.3ef18d77b4678c24a83a.png",
+    "static/media/Sandra_CV.pdf": "/static/media/Sandra_CV.e4369f843f9cf78ac2b9.pdf",
+    "static/media/LogoLoader.svg": "/static/media/LogoLoader.0487a159c9febc5acfa4f1a4242f483d.svg",
+    "static/media/Logo.svg": "/static/media/Logo.52a85b844e19ba19e57855347ef80d70.svg",
     "index.html": "/index.html",
-    "main.3dac309a.css.map": "/static/css/main.3dac309a.css.map",
-    "main.7f336f82.js.map": "/static/js/main.7f336f82.js.map"
+    "main.45db5760.css.map": "/static/css/main.45db5760.css.map",
+    "main.285102cd.js.map": "/static/js/main.285102cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dac309a.css",
-    "static/js/main.7f336f82.js"
+    "static/css/main.45db5760.css",
+    "static/js/main.285102cd.js"
   ]
 }
