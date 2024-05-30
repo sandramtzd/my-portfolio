@@ -77,7 +77,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.div`
-    color: var(--color-secondary;
+    color: var(--color-bg-variant);
   
 `;
 
@@ -86,11 +86,11 @@ export const Description = styled.div`
     font-size: 1.2rem;
     font-family: 'Karla', sans-serif;
     margin: 0 0 1rem;
-    padding-right: 3rem;
-    text-align: justify;
+    margin-right: 5rem;
+    text-align: left;
 
     @media (max-width: 768px) {
-      padding-right: 3rem;
+      margin-right: 2rem;
 
     }
 

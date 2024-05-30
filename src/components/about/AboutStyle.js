@@ -3,147 +3,178 @@ import styled from "styled-components";
 export const AboutContainer = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    padding: 150px 100px;
-    z-index: 1;
+    align-items: center;
+    padding: 2rem 5rem 2rem 7rem;
+    width: 100%;
 
-    @media (max-width: 960px) {
-        padding: 100px 100px;
-    }
     @media (max-width: 768px) {
-        padding: 150px 20px;
-        
+        padding: 2rem;
+       
     }   
+    @media (max-width: 480px) {
+        padding: 1rem;
 
-
+    }
 
 `;
 
 export const Heading = styled.h1`
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 10px 0 20px;
-    width: 100%;
-    white-space: nowrap;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: var(--color-light);
-    
-    line-height: 1;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
 
     &:after {
+        position: relative;
         content: "";
-        width: 100%;
-        height: 0.5px;
+        width: 40%;
+        height: 1px;
+        margin-left: 40px;
         background: var(--color-light);
-        margin-left: 50px;
+        opacity: 0.5;
         
-
     }
+
+
 `;
 
 
 export const FlexContainer = styled.div`
-    display: grid;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+   
 
-    
-    
-    
-
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
 `;
 
 export const AboutContent = styled.div`
     width: 100%;
-    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        margin-right: 2rem;
+        
+       
+      }
     
+    @media (max-width: 480px) {
+        font-size: 1rem;
+      }
 
-   
-   
-
-`;
-
-export const SkillsContainer = styled.ul`
-    display: grid;
-    grid-template-columns:repeat(5, 100px);
-    overflow: hidden;
-    list-style: none;
-
-`;
-
-export const Skill= styled.div`
-    position:relative;
-    margin-bottom: 10px;
-    font-family: 'Karla' sans-serif;
-    color: var(--color-secondary);
     
-
 `;
-
-export const SkillTitle= styled.div`
-    position:relative;
-    color: var(--color-primary)
-`;
-
-export const SkillList= styled.div`
-    position:relative;
-`;
-
-export const SkillItem= styled.div`
-    position:relative;
-`;
-
-export const SkillImage= styled.div`
-    position: relative;
-`;
-
-
-
-
 
 export const Picture = styled.div`
-    position: relative;
-    width: 30px;
-    margin-left: 50px;
-    
-    
-`;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+`;
 
 export const Avatar = styled.img`
     position: relative;
     filter: grayscale(100%) contrast(1);
-    border-radius: 3px;
-    transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)';
+    border-radius: 5px;
     box-shadow: 0 10px 30px -15px var(--color-primary);
+    transition: var(--transition);
+    width: 200px;
 
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0 20px 30px -15px var(--color-primary);
+      transform: translate(-10px, -5px)
+    }
+    
 
 `;
 
 export const AvatarLink = styled.a`
+    display: block;
+    overflow: hidden;
     
-    position: relative;
-    border-radius: 3px;
-    margin-left: -20px;
+
     &:hover,
     &:focus {
-      background: transparent;
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
+      
       ${Avatar} {
         filter: none;
         mix-blend-mode: normal;
       }
 
     }
+    
+  
+    
+
 
 
 `;
+
+
+
+
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+`;
+
+export const Skill = styled.div`
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+`;
+
+export const SkillTitle = styled.h3`
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+`;
+
+export const SkillList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+`;
+
+export const SkillItem = styled.li`
+  font-size: 1rem;
+  color: var(--color-light);
+  margin-bottom: 10px;
+`;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

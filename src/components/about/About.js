@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react'
-import { AboutContainer, Heading, FlexContainer, AboutContent, Picture, Avatar, AvatarLink, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage, LeftContainer} from './AboutStyle.js'
+import {AboutContainer, Heading, FlexContainer, AboutContent, Picture, Avatar, AvatarLink, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem} from './AboutStyle.js'
 import { bio, skills } from '../../utils/data/constants';
 import sr from '../../utils/Scroll';
 import { srConfig } from '../../utils/ScrollConfig';
@@ -8,9 +8,13 @@ import MeAbout from '../../assets/meabout.png';
 
 const About = () => {
   const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [] );
-  
+  useEffect(() => {
+    if (sr) {
+      sr.reveal(revealContainer.current, srConfig(100));
 
+    }
+  }, []);
+    
   return (
 
     <AboutContainer id='about' ref={revealContainer} >
@@ -22,27 +26,24 @@ const About = () => {
             <p>{bio.about[2]}</p><br/>
 
             <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
-                      {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-
-            </Skill>  
-          ))}
-
-        </SkillsContainer>
+              {skills.map((skill, index) => (
+                <Skill key={index}>
+                  <SkillTitle>{skill.title}</SkillTitle>
+                  <SkillList>
+                    {skill.skills.map((item, index) => (
+                      <SkillItem key={index}>
+                          {item.name}
+                      </SkillItem>
+                    ))}
+                  </SkillList>
+                </Skill>  
+              ))}
+            </SkillsContainer>
           </AboutContent>
 
         <Picture>
           <AvatarLink href= 'https://github.com/sandramtzd'>
-            <Avatar src={MeAbout} alt='Avatar' style={{width: "200px"}}/>
+            <Avatar src={MeAbout} alt='Avatar'/>
           </AvatarLink>
         </Picture>
       </FlexContainer>

@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 
 const Socials = ({ isFooter}) => {
+  
   const SocialsComponent = isFooter ? SocialsFooterContainer : SocialsContainer;
   return (
     <SocialsComponent>
