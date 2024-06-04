@@ -8,10 +8,10 @@ import MeAbout from '../../assets/meabout.png';
 
 const About = () => {
   const revealContainer = useRef(null);
+  
   useEffect(() => {
     if (sr) {
       sr.reveal(revealContainer.current, srConfig(100));
-
     }
   }, []);
     
@@ -20,34 +20,29 @@ const About = () => {
     <AboutContainer id='about' ref={revealContainer} >
       <Heading>About</Heading>
       <FlexContainer>
-          <AboutContent>
-            <p>{bio.about[0]}</p><br/>
-            <p>{bio.about[1]}</p><br/>
-            <p>{bio.about[2]}</p><br/>
-
-            <SkillsContainer>
-              {skills.map((skill, index) => (
-                <Skill key={index}>
-                  <SkillTitle>{skill.title}</SkillTitle>
-                  <SkillList>
-                    {skill.skills.map((item, index) => (
-                      <SkillItem key={index}>
-                          {item.name}
-                      </SkillItem>
-                    ))}
-                  </SkillList>
-                </Skill>  
-              ))}
-            </SkillsContainer>
-          </AboutContent>
-
         <Picture>
-          <AvatarLink href= 'https://github.com/sandramtzd'>
-            <Avatar src={MeAbout} alt='Avatar'/>
+          <AvatarLink href='https://github.com/sandramtzd'>
+            <Avatar src={MeAbout} alt='Avatar' />
           </AvatarLink>
         </Picture>
+        <AboutContent>
+          <p>{bio.about[0]}</p><br />
+          <p>{bio.about[1]}</p><br />
+          <p>{bio.about[2]}</p><br />
+        </AboutContent>
       </FlexContainer>
-
+      <SkillsContainer>
+        {skills.map((skill, index) => (
+          <Skill key={index}>
+            <SkillTitle>{skill.title}</SkillTitle>
+            <SkillList>
+              {skill.skills.map((item, index) => (
+                <SkillItem key={index}>{item.name}</SkillItem>
+              ))}
+            </SkillList>
+          </Skill>
+        ))}
+      </SkillsContainer>
     </AboutContainer>
    
   )
