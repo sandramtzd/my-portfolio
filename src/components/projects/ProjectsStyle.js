@@ -5,55 +5,51 @@ export const ProjectsContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    padding: 150px 200px;
-    z-index: 1;
     align-items: center;
+    padding: 2rem 5rem 2rem 7rem;
 
-    @media (max-width: 960px) {
-      padding: 66px 16px;
+    @media (max-width: 768px) {
+        padding: 2rem;
+    }   
+    @media (max-width: 480px) {
+        padding: 1rem;
     }
-    @media (max-width: 640) {
-      padding: 32px 16px;
-    }
-    
-  
 
 `;
 
 export const Heading = styled.h1`
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 10px 0 40px;
-    width: 100%;
-    white-space: nowrap;
-    font-size: 3.5rem;
-    
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: var(--color-light);
-    line-height: 1.3;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
 
     &:after {
+        position: relative;
         content: "";
-        width: 100%;
-        height: 1.5px;
+        width: 50%;
+        height: 1px;
+        margin-left: 40px;
         background: var(--color-light);
-        margin-left: 50px;
-
+        opacity: 0.5;
+    }
 `;
 
 export const ToggleGroup = styled.div`
     display: flex;
-    border: 1.5px solid var(--color-primary);
+    border: 0.1rem solid var(--color-primary);
     color:  var(--color-light-variant);
-    font-size: 1.5rem;
-    border-radius: 6px;
+    font-size: 1rem;
+    border-radius: 0.4rem;
     font-weight: 500;
     margin: 22px 0px;
     margin-bottom: 50px;
 
     @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 0.6rem;
     }
 
 `;
@@ -69,8 +65,8 @@ export const ToggleButton = styled.div`
         background-color: var(--color-bg-variant);
     }
     @media (max-width: 768px) {
-        padding: 6px 8px;
-        border-radius: 4px;
+        
+        
     }
 
 `;

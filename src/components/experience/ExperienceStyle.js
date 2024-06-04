@@ -4,40 +4,39 @@ import { css } from "styled-components";
 export const ExperienceContainer = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    padding: 150px 200px;
-    
-    @media (max-width: 960px) {
-        padding: 66px 16px;
+    align-items: center;
+    padding: 2rem 5rem 2rem 7rem;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+    }   
+    @media (max-width: 480px) {
+        padding: 1rem;
     }
-    @media (max-width: 640) {
-        padding: 32px 16px;
-    }
-    z-index: 1;
 
 
 `;
 
 export const Heading = styled.h1`
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 10px 0 40px;
-    width: 100%;
-    white-space: nowrap;
-    font-size: 3.5rem;
+font-size: 2.5rem;
+    margin-bottom: 20px;
     color: var(--color-light);
-    line-height: 1.3;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
 
     &:after {
+        position: relative;
         content: "";
-        width: 100%;
-        height: 1.5px;
+        width: 50%;
+        height: 1px;
+        margin-left: 40px;
         background: var(--color-light);
-        margin-left: 50px;
-
+        opacity: 0.5;
+    }
 `;
 
 export const Tabs = styled.div`

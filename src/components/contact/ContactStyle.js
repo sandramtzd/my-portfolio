@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.section`
-    margin: 0 auto 100px;
-    padding: 150px 0;
-    text-align: center;
-    max-width: 600px;
-    @media (max-width: 960px) {
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem 2rem 7rem;
+    width: 100%;
+
+    @media (max-width: 768px) {
+    padding: 2rem;
     }
-    
-
-    
-
+    @media (max-width: 480px) {
+    padding: 1rem;
+    }
 
 `;
 
 export const Heading = styled.h1`
-    
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0 40px;
     width: 100%;
     white-space: nowrap;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 400;
     line-height: 1.3;
     color: var(--color-light)
 
@@ -33,22 +33,32 @@ export const Heading = styled.h1`
 `;
 
 export const Description = styled.p`
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
     max-width: 100%;
     color: var(--color-secondary);
+
+    @media (max-width: 768px) {
+        margin-right: 2rem;
+  
+      }
+  
 
 
 `;
 
 
 export const ContactForm = styled.form`
+    display: flex; 
+    flex-direction: column;   
     width: 90%;
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
     padding: 32px;
     gap: 12px;
+
+    @media (max-width: 768px) {
+        align-items: center;
+      }
 
 `;
 
@@ -94,7 +104,7 @@ export const ContactButton = styled.button`
     width: 100%;
     text-align: center;
     background: var(--color-primary);
-    padding: 20px 20px;
+    padding: 15px 15px;
     margin-top: 10px;
     border-radius: 12px;
     border: none;

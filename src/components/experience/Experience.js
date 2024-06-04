@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <ExperienceContainer id='experience' ref={revealContainer}>
       <Heading>Experience</Heading>
-      <p>under construction</p>
+      <p>Coming soon...</p>
       {/* <Tabs>
         <TabsList role="tablist" onKeyDown={e => onKeyPressed(e)}>
             {experiences.map((item) => (
