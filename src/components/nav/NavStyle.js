@@ -26,7 +26,7 @@ export const NavContainer = styled.div`
 `;
 
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.div`
     width: 100%;
     display: flex;
     justify-content: start;
