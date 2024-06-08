@@ -1,5 +1,5 @@
 module.exports = {
-    srConfig: (delay = 200) => ({
+    srConfig: (delay = 100) => ({
         origin: 'bottom',
         distance: '20px',
         duration: 500,

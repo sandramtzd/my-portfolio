@@ -1,3 +1,8 @@
+import WMSImage from '../../assets/Projects/WMS.png';
+import Jonagotchi from '../../assets/Projects/Jonagotchi.png';
+import MindMentor from '../../assets/Projects/MindMentor.png'
+
+
 export const bio = {
     name: "Sandra Martinez",
     roles: [
@@ -184,7 +189,7 @@ export const projects = [
       description:
         "Developed a full-stack web application for a functional warehouse management system for the fictional company Rainforest Retail",
       image:
-        "https://github.com/sandramtzd/my_portfolio/blob/main/src/assets/Projects/WMS.png",
+        WMSImage,
       tags: ["React Js", "Java"],
       category: "web app",
       github: "https://github.com/RNWalker/capstone_backend_project",
@@ -219,7 +224,7 @@ export const projects = [
       description:
         "Developed the front end for a virtual pet",
       image:
-        "https://github.com/sandramtzd/my_portfolio/blob/main/src/assets/Projects/Jonagotchi.png",
+        Jonagotchi,
       tags: [
         "React Js", "Java",
 
@@ -271,7 +276,7 @@ export const projects = [
       description:
         "Developed a mental health app powered by AI for more inclusive workplaces",
       image:
-        "",
+        MindMentor,
       tags: ["React Native", "Android Studio"],
       category: "mobile app",
       github: "https://github.com/sarahoco014/Mind_Mentor_Frontend",

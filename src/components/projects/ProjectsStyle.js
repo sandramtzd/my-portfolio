@@ -6,10 +6,12 @@ export const ProjectsContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
     padding: 2rem 5rem 2rem 7rem;
 
     @media (max-width: 768px) {
         padding: 2rem;
+        margin-top; 1rem;
     }   
     @media (max-width: 480px) {
         padding: 1rem;

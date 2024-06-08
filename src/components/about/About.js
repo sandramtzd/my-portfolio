@@ -11,7 +11,7 @@ const About = () => {
   
   useEffect(() => {
     if (sr) {
-      sr.reveal(revealContainer.current, srConfig(100));
+      sr.reveal(revealContainer.current, srConfig(10));
     }
   }, []);
     

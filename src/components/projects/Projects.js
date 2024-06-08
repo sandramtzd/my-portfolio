@@ -9,7 +9,12 @@ import ProjectCard from './ProjectCard';
 const Projects = ({openModal,setOpenModal}) => {
   const [toggle, setToggle] = useState("all");
   const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [] );
+
+  useEffect(() => {
+    if (sr) {
+      sr.reveal(revealContainer.current, srConfig(10));
+    }
+  }, []);
 
   return (
     <ProjectsContainer id="projects" ref={revealContainer}>
